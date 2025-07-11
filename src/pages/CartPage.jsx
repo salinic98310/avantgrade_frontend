@@ -5,7 +5,7 @@ import { useWishlist } from '../context/WishlistContext.jsx'; // Importing cart 
 
 const CartPage = () => {
   const navigate = useNavigate();
-  const { cartItems, removeFromCart, updateQuantity } = useWishlist(); // Destructure from context
+  const { cartItems, removeFromCart, updateQuantity } = useWishlist(); // Destructure from contextsdvjbsdivi
 
   const subtotal = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
